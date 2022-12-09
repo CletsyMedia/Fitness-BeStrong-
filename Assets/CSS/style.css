@@ -193,7 +193,7 @@ body{
     height: 100vh;
 }
 .home .imgSlider2{
-    background-image: url(../images/Hero1.jpg);
+    background-image: url(../images/hero1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
