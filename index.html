@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness | Landing Page</title>
+    <meta name="author" content="Cletus Samuel=Cletussam12@yahoo.com">
+    <meta name="description" content="We train women the possibility to become fit and healthier in the modern world.">
+    <link rel="shortcut icon" href="./Assets/images/logo.png" type="image" class="icon-logo">
+    <link rel="stylesheet" href="./Assets/CSS/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!-- css Swiper -->
+    <link rel="stylesheet" href="./Assets/CSS/swiper-bundle.min.css">
+    <!-- AIOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AIOS Library ends -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo"><img src="./Assets/images/logo.png" alt=""></a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-Link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About Us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#class" class="nav_link">Classes</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#team" class="nav_link">Team</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#news" class="nav_link">News</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+            <a href="tel:00111222123445" class="num"><i class="fal fa-phone-alt"></i><span>+00 111 222 123445</span></a>
+            <!-- Toggle -->
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="fal fa-bars"></i>
+            </div>
+        </nav>   
+    </header>
+<!-- Main -->
+    <main class="main">
+        <!-- ============Home================= -->
+        <section class="home" id="home">
+            <div class="card">
+                <p>Practice Hard, Play Strong, Pain is Glory. ( Only For Women )</p>
+                <div class="title">
+                    <h1>Solution For Moving <br>
+                        Better And Feeling Healthier.
+                    </h1>
+                </div>
+                <button type="button" class="btn" id="modalReg">Get Started</button>
+            </div>
+
+            <div class="icons"  data-aos="zoom-in">
+                <div><i class="fal fa-globe-africa"></i></div>
+                <div><i class="fab fa-facebook-f"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-instagram"></i></div>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="slides fade">
+                    <div class="imgSlider"></div>
+                </div>
+                <div class="slides fade">
+                    <div class="imgSlider1"></div>
+                </div>
+                <div class="slides fade">
+                    <div class="imgSlider2"></div>
+                </div>
+                <div class="slides fade">
+                    <div class="imgSlider3"></div>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+        </section>
+        <!-- ============Home Ends================= -->
+        <!-- Modal Registration Box -->
+        <div class="modalBox">
+            <div class="modalCard">
+                <div class="modalHead">
+                    <i class="fal fa-times" id="modalClose"></i>
+                    <h1>BeStrong & Healthy</h1>
+                    <form action="">
+                        <div class="input-group">
+                            <label for="">Full Name</label>
+                            <input type="text" placeholder="Enter name" id="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Email</label>
+                            <input type="email" placeholder="abc@gmail.com" id="name" required>
+                        </div>
+                        <!-- <div class="input-group">
+                            <label for="">Cell No.</label>
+                            <input type="tel" placeholder="Phone number" id="number">
+                        </div> -->
+                        <div class="input-group">
+                            <label for="">Membership Start Date</label>
+                            <input type="date" id="meeting">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Membership Class</label>
+                            <select id="sel" name="Subject" onchange="change(this)">
+                                <option disabled selected>Subject</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Cardio">Cardio Fitness</option>
+                                <option value="Cycle Training">Cycle Training</option>
+                                <option value="Body Attack">Body Attack</option>
+                                <option value="Weight Lifting">Weight Lifting</option>
+                                <option value="Bench Press">Bench Press</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Membership Duration</label>
+                            <div class="duration">
+                                <div>
+                                    <input type="radio" name="" id="1 month">
+                                    <label for="">1 month</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="" id="3 month">
+                                    <label for="">3 months</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="" id="6 months">
+                                    <label for="">6 months</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="" id="1 year">
+                                    <label for="">1 year</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn" type="submit">Submit</button>
+                    </form> 
+                </div>    
+            </div>
+        </div>
+        <!-- Modal Registration Box Ends -->
+        <!-- boxes -->
+        <section class="showcase">
+            <div class="boxes" data-aos="zoom-in">
+                <div class="box">
+                    <div><img src="./Assets/images/bx1.png" alt=""></div>
+                    <div class="title">
+                        <h3>Body Building with Classic</h3>
+                        <p>Trained Achieve Your Goals</p>
+                        <button class="btn btn1">$60*/M</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div><img src="./Assets/images/bx2.png" alt=""></div>
+                    <div class="title">
+                        <h3>Body Building with Standard</h3>
+                        <p>Trained under best trainers </p>
+                        <button class="btn btn2">$120*/M</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div><img src="./Assets/images/bx3.png" alt=""></div>
+                    <div class="title">
+                        <h3>Body Building with Premium</h3>
+                        <p>Trained Day and Night</p>
+                        <button class="btn">$200*/M</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- boxes Ends -->
+        
+        <!-- about -->
+        <section id="about" class="container">
+            <div class="showcase">
+                <div class="card-title">
+                    <h4>ABOUT US</h4>
+                    <h1>Welcome to Bestrong</h1>
+                    <div class="line"></div>
+                    <p class="lead">From the moment you walk through the door you know Gym base is a unique place</p>
+                    <p>
+                    If you run a fitness gym, this is one slogan that can bring customers in. No one likes having to drive miles out of their way to go to the gym. It is always easier to have a gym that is actually close to home. 
+                    Your body hears everything that your mind says. 
+                    </p>
+                    <button class="btn">Read More</button>
+                </div>
+                <div class="card2" data-aos="fade-right">
+                    <div class="img"><img src="./Assets/images/sh1.png" alt=""></div>
+                    <div class="cardbox">
+                    <div class="img"> <img src="./Assets/images/sh2.png" alt=""></div>
+                        <div class="img"><img src="./Assets//images/sh3.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes -->
+        <section class="class" id="class">
+            <div class="head">
+                <div class="title">
+                    <div class="lead">
+                        <h2>Our Classes</h2>
+                    <div class="line"></div>
+                    </div>
+                    <p class="lead">If You Run A Fitness Gym, This Is One Slogan That Can Bring Customers In. 
+                    No One Likes Having To Drive Miles Out Of Their Way To Go To The Gym. It Is Always Easier To Have A Gym That Is Actually Close To Home. 
+                    Your Body Hears Everything That Your Mind Says.</p>
+                </div>
+            </div>
+            <div class="classes">
+                <div class="classBox">
+                    <div class="classHead">
+                        <img src="./Assets/images/px1.png" alt="">
+                        <p>Cardio Fitness</p>
+                    </div>
+                </div>
+                <div class="classBox">
+                    <div class="classHead">
+                        <img src="./Assets/images/px2.png" alt="" h>
+                        <!-- <p>Cardio Fitness</p> -->
+                    </div>
+                </div>
+                <div class="classBox">
+                    <div class="classHead">
+                        <img src="./Assets/images/px3.png" alt="">
+                        <p>Cycle Training</p>
+                    </div>
+                </div>
+                <div class="classBox">
+                    <div class="classHead">
+                        <img src="./Assets/images/px4.png" alt="">
+                        <p>Body Attack</p>
+                    </div>
+                </div>
+                <div class="classBox">
+                    <div class="classHead">
+                        <img src="./Assets/images/px5.png" alt="">
+                        <p>Yoga Pilates</p>
+                    </div>
+                </div>
+                <div class="classBox">
+                    <div class="classHead">
+                        <img src="./Assets/images/px6.png" alt="">
+                        <p>Weight Lifting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal" data-aos="flip-up">
+                <div class="closex"><i class="fal fa-times boxClose"></i></div>
+                <h1>Advanced Gymnastic</h1>
+                <div class="line1"></div>
+                <p>If you run a fitness gym, this is one slogan that
+                    can bring customers in. No one likes having to
+                    drive miles out of their way to go to the gym.
+                </p>
+                <button class="btn">Read More</button>
+            </div>
+        </section>
+        <!-- Team -->
+        <section class="team" id="team">
+            <div class="team-head">
+                <h1>Meet Our Team</h1>
+                <div class="line"></div>
+                <p class="lead">If you run a fitness gym, this is one slogan that can 
+                    bring customers in. No one likes having to drive miles out of their way to go to the gym. It is always easier to have a gym that is actually close to home. 
+                    Your body hears everything that your mind says.</p>
+            </div>
+            <div class="col" data-aos="zoom-in">
+                <div class="col-3">
+                    <div class="col-img"><img src="./Assets/images/tm1.png" alt=""></div>
+                    <div class="title">
+                        <h2>Higgins Emma</h2>
+                        <p>Body Building</p>
+                        <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-img"><img src="./Assets/images/shc3.png" alt=""></div>
+                    <div class="title">
+                        <h2>Katherine Robinson</h2>
+                        <p>Fitness Coach</p>
+                        <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-img"><img src="./Assets/images/shc2.png" alt=""></div>
+                    <div class="title">
+                        <h2>Skye Sorenson</h2>
+                        <p>Personal Trainer</p>
+                        <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">See The Whole Team</button>
+        </section>
+        <!-- Testimonials -->
+        <div class="swiper mySlider">
+            <h1>Testimonial</h1>
+
+            <div class="slider swiper-wrapper">
+                <div class="slide-box swiper-slide">
+                    <p class="comment lead">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                    </p>
+                    <img src="./Assets/images/pic-4.png" alt="">
+                    <div class="name-tag">
+                        <h3 class="name">Ahmed Elsayed</h3>
+                        <h4 class="job">Our Client: Chef</h4>
+                    </div>
+                </div>
+                <div class="slide-box swiper-slide">
+                    <p class="comment">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                    </p>
+                    <img src="./Assets/images/pic-1.png" alt="">
+                    <div class="name-tag">
+                        <h3 class="name">McAthur Jerry</h3>
+                        <h4 class="job">Our Client: Photographer</h4>
+                    </div>
+                </div>
+                <div class="slide-box swiper-slide">
+                    <p class="comment">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                    </p>
+                    <img src="./Assets/images/pic-2.png" alt="">
+                    <div class="name-tag">
+                        <h3 class="name">Eva Smith</h3>
+                        <h4 class="job">Our Client: Gymnist</h4>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- <div class="swiper-button-next swiper-btnNav"></div>
+            <div class="swiper-button-prev swiper-btnNav"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- News -->
+        <section class="news" id="news">
+            <div class="card">
+                <h1>Recent News</h1>
+                <div class="line"></div>
+                <div class="box" data-aos="zoom-in">
+                    <div class="boxes">
+                        <div class="small">
+                            <img src="./Assets/images/sml1.png" alt="">
+                            <h4>This Harvard Student Ran 70 Miles
+                                Back to College
+                            </h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id 
+                                est eopksio laborum. 
+                                Sed ut perspiciatis.</p>
+                                <div class="icon">
+                                    <i class="fal fa-globe-europe"><span>Long Name Here</span></i>
+                                    <i class="fal fa-clock"><span>1h ago</span></i>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="small">
+                            <img src="./Assets/images/sml2.png" alt="">
+                            <h4>Female Boxers Describe What It's Like to Take
+                                a Punch
+                            </h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id 
+                                est eopksio laborum. 
+                                Sed ut perspiciatis.</p>
+                                <div class="icon">
+                                    <i class="fal fa-globe-europe"><span>Long Name Here</span></i>
+                                    <i class="fal fa-clock"><span>1h ago</span></i>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="small">
+                            <img src="./Assets/images/sml3.png" alt="">
+                            <h4>21 Top Fitness Blogs You Should Follow
+                                in 2021
+                            </h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id 
+                                est eopksio laborum. 
+                                Sed ut perspiciatis.</p>
+                                <div class="icon">
+                                    <i class="fal fa-globe-europe"><span>Long Name Here</span></i>
+                                    <i class="fal fa-clock"><span>1h ago</span></i>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">See More News</button>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            
+            <div class="cont">
+                <h1>Contact Us</h1>
+                <div class="line"></div>
+                <select name="Subject">
+                    <option disabled selected>Classes</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Cardio">Cardio Fitness</option>
+                    <option value="Cycle Training">Cycle Training</option>
+                    <option value="Body Attack">Body Attack</option>
+                    <option value="Weight Lifting">Weight Lifting</option>
+                    <option value="Bench Press">Bench Press</option>
+                </select>
+                <input type="email" placeholder="Email" required>
+                <textarea cols="30" rows="8" placeholder="Write Your Message Here" required></textarea>
+                <button class="btn">Submit</button>
+                <p>Email@Example.Com | +002-010-66269735</p>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="contImg">
+                <img src="./Assets/images/cont1.png" alt="">
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="foot">
+                <div class="logo"><img src="./Assets/images/logo2.png" alt="footerLogo"></div>
+                <div class="place">
+                    <h4>Quick Contacts</h4>
+                    <p>50 Raritan Center Pkwy,</p>
+                    <p>Edison, NJ 08837, USA</p>
+                    <div class="social">
+                        <i class="fal fa-phone-alt"><span> +00 111 222 1234</span></i> <br>
+                        <i class="fal fa-envelope"> <span>Bestrong@gmail.com</span></i>
+                    </div>
+                    <div class="icon">
+                        <div><i class="fab fa-instagram"></i></div>
+                        <div><i class="fab fa-twitter"></i></div>
+                        <div><i class="fab fa-facebook-f"></i></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>Popular Tags</h4>
+                    <div class="grid">
+                        <h3>Workout</h3>
+                        <h3>Crossfit</h3>
+                        <h3>Schedule</h3>
+                        <h3>Trainers</h3>
+                        <h3>Boxing</h3>
+                        <h3>Schedule</h3>
+                        <h3>Nutrition</h3>
+                        <h3>Gym</h3>
+                        <h3>Plans</h3>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav_list links">
+                <li class="nav_item">
+                    <a href="#home" class="nav_link">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#about" class="nav_link">About Us</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#class" class="nav_link">Classes</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#team" class="nav_link">Team</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#news" class="nav_link">News</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#contact" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <p class="copy">&copy;2022 Prelude(be💪) by CletsyMedia. All Rights Reserved</p>
+            <div class="whiteLine"></div>
+        </footer>
+    </main>
+<!-- Main  -->
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- AOS -->
+<script src="./Assets/Main/swiper-bundle.min.js"></script>
+<script src="./Assets/Main/main.js"></script>
+</body>
+</html>
